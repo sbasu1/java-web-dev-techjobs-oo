@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Employer extends  EntityId{
 
-    private String value;
+
 
     public Employer() {
         id = nextId;
@@ -36,17 +36,5 @@ public class Employer extends  EntityId{
         return Objects.hash(getId());
     }
 
-    // Getters and Setters:
 
-    public int getId() {
-        return id;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
-    }
 }

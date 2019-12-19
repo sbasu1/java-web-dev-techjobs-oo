@@ -37,17 +37,4 @@ public class PositionType  extends  EntityId{
     public int hashCode() {
         return Objects.hash(id);
     }
-// Getters and Setters:
-
-    public int getId() {
-        return id;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
-    }
 }

@@ -37,9 +37,7 @@ public class Job  extends  EntityId{
         this.coreCompetency = coreCompetency;
     }
 
-    public int getId() {
-        return id;
-    }
+
 
     public String getName() {
         return name;
