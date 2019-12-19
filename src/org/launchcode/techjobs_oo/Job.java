@@ -2,10 +2,9 @@ package org.launchcode.techjobs_oo;
 
 import java.util.Objects;
 
-public class Job {
+public class Job  extends  EntityId{
 
-    private int id;
-    private static int nextId = 1;
+
 
     private String name;
     private Employer employer;

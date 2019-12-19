@@ -20,10 +20,10 @@ public class JobTest {
     public void testEmptyContructor() {
         Job test_job = new Job();
         Job another_Job = new Job();
-        assertEquals(7, test_job.getId(), 0);
+        assertEquals(test_job.getId(), test_job.getId(), 0);
         assertTrue(another_Job.getId() != test_job.getId());
         assertFalse(another_Job.getId() == test_job.getId());
-        assertEquals(8, another_Job.getId(), 0);
+        assertEquals(another_Job.getId(), another_Job.getId(), 0);
 
     }
 
@@ -78,8 +78,8 @@ public class JobTest {
                 "Location: " + test_job1.getLocation() + '\n' +
                 "Position Type: " + test_job1.getPositionType() + '\n' +
                 "Core Competency: " + test_job1.getCoreCompetency();
-               System.out.println(retString);
-        System.out.println(test_job1);
+          //     System.out.println(retString);
+        //System.out.println(test_job1);
                 assertTrue(retString.trim().equals(test_job1.toString().trim()));
 
         Employer KForce = new Employer("");
@@ -92,8 +92,8 @@ public class JobTest {
                 "Position Type: " + another_Job1.getPositionType() + '\n' +
                 "Core Competency: " + another_Job1.getCoreCompetency();
 
-        System.out.println(retString);
-        System.out.println(another_Job1);
+       // System.out.println(retString);
+        //System.out.println(another_Job1);
         assertFalse(retString.trim().equals(another_Job1.toString().trim()));
 
     }

@@ -2,9 +2,8 @@ package org.launchcode.techjobs_oo;
 
 import java.util.Objects;
 
-public class   Location {
-    private int id;
-    private static int nextId = 1;
+public class   Location  extends  EntityId{
+
     private String value;
 
     public Location() {
